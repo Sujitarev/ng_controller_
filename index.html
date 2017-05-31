@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	
+	<script src="js/angular.js">
+        /*
+         Make a controller with scope and print “Hello World”.
+         */
+	</script>
+	<title> ng_controller</title>
+
+	<script type="text/javascript">
+	
+		var myApp = angular.module('myApp', []);
+
+		myApp.controller('myController', function ($scope) {
+			$scope.message = 'Hello World';
+		});
+
+		
+	</script>
+
+
+</head>
+
+<body>
+
+<center>
+
+		<div ng-controller="myController">
+			Message : {{message}} <br/>
+			
+		</div>
+				
+</center>
+
+
+</body>
+</html>
